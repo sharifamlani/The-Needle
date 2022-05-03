@@ -92,7 +92,7 @@ summary(test_results)
 #Correlation
 A_P_Cor <- cor(test$y_hat, test$dem_vote, use = "complete")
 
-#RMSE
+#Key Model Stats
 mtry <- rf.res$bestTune
 RMSE <- paste(round(subset(data.frame(rf.res$results), mtry == rf.res$bestTune[[1]])$RMSE,3) *100, "%", sep = "")
 Rsquared <- round(subset(data.frame(rf.res$results), mtry == rf.res$bestTune[[1]])$Rsquared, 2)
