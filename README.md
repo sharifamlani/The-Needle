@@ -1,2 +1,2 @@
 # The Needle
- Predicting Vote Share and Outcomes in Congressional Elections
+ The purpose of this reposiotry to to make public random forest code that predicts vote share and outcomes in congressional elections. 
