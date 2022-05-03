@@ -41,7 +41,6 @@ setwd("C:/Users/Shari/OneDrive/University of California, Davis/Research Projects
 #Upload Data
 load(file = "District Level - Complete Data - w1.RData")
 House.Vote.Share.1 <- House.Vote.Share.Pure
-House.dem_vote.1 <- House.dem_vote.Pure
 
 ######################## Examine Data ##################
 head(House.Vote.Share.1)
