@@ -100,7 +100,7 @@ pred.train <- predict(rf.res, train, type="prob")[,"Democratic.Win"]
 pred.test <- predict(rf.res, test, type="prob")[,"Democratic.Win"]
 
 
-################## Variable importance Graphs ###################
+################## Variable Importance Graphs ###################
 #Extract Importance
 rfImp <- varImp(rf.res)
 plot(rfImp)

@@ -116,7 +116,7 @@ Plot_1 <- ggplot(test, aes (x = y_hat, y = dem_vote)) +
         legend.position="bottom"); Plot1
 
   
-############# Variable importance Graphs ############# 
+############# Variable Importance Graphs ############# 
 # Variable importance
 rfImp <- varImp(rf.res)
 plot(rfImp)
