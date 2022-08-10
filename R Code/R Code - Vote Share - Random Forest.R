@@ -106,7 +106,7 @@ Plot_1 <- ggplot(test, aes (x = y_hat, y = dem_vote)) +
        y = "Actual Democratic Vote Share",
        title = "Actual Verses Predicted Two-Party Democratic Vote Share",
        subtitle = "Estimates Generated From Out of Sample Predictions",
-       caption = paste('Scatterplot reports out of sample comparison between actual and predicted two-party vote share.\nModel is fit using random forest algorithm.\nPlots fitted with a linear line with 95% confidence intervals.\nDotted line is fit to represent 1:1 relationship.\nCorrelation between actual and predicted values is', round(A_P_Cor, 2), "\nModel statistics are as follows:\nNumber of predictors sampled at each splits = ", mtry, "| Root Mean Squared Error = ", RMSE, " | R Squared = ", Rsquared, sep = " ")) +
+       caption = paste('Note: Scatterplot reports out of sample comparison between actual and predicted two-party vote share.\nModel is fit using random forest algorithm.\nPlot fitted with a linear line with 95% confidence intervals.\nDotted line is fit to represent 1:1 relationship.\nCorrelation between actual and predicted values is', round(A_P_Cor, 2), "\nModel statistics are as follows:\nNumber of predictors sampled at each splits = ", mtry, "| Root Mean Squared Error = ", RMSE, " | R Squared = ", Rsquared, sep = " ")) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   scale_x_continuous(labels = scales::percent_format(accuracy = 1)) +
   theme(plot.title = element_text(hjust = 0.5),
